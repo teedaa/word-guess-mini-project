@@ -8,28 +8,34 @@
     <link rel="stylesheet" href="./assets/style.css"/>
 </head>
 
-<body>
-    <div class="wrapper">
+<body class="wrapper">
         <header>
           <h1>HTML Hangman</h1>
-        </header>
-        <div class="card">
+        </header class="card">
+        <section class="card">
           <div class="card-header">
-            <h2>What's your guess</h2>
+            <h2>What's your guess?</h2>
           </div>
           <div class="card-body">
             <textarea
-              readonly
-              id="password"
-              placeholder="Your Secure Password"
-              aria-label="Generated Password"
+              id="guess"
+              placeholder="Let's Play!"
+              aria-label="Chosen Word"
             ></textarea>
           </div>
           <div class="card-footer">
-            <button id="submit" class="btn">submit</button>
+            <button id="start" class="btn">Start</button>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <aside>
+            <div class="scoreboard"></div>
+            <h2>Score:</h2>
+            <p> Wins:</p>
+            <p> Losses:</p>
+            <button id="restart" class="rstart">Restart</button>
+        </aside>
+
       <script src="./assets/script.js"></script>
 </body>
 </html>
