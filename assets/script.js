@@ -1,3 +1,24 @@
+//let timerId = setInterval(() => document.getElementById("start").click(), 1000);
+//setTimeout(() => { clearInterval(timerId); alert('You Lost');}, 10000);
+
+var timeEl = document.querySelector(".btn")
+var secondsLeft = 10;
+var timeText = document.querySelector(".time")
+timeEl.addEventListener("click", timer)
+
+function timer() {
+var gameTime = setInterval(function() {
+    secondsLeft--;
+    timeText.textContent = secondsLeft + " seconds left"
+    if(secondsLeft == 0) {
+    clearInterval(gameTime);
+    timeText.textContent = "You Lost" }
+  }, 1000);
+}
+
+//timeEl.addEventListener("click", timer)
+
+
 // game starts on "click" of start button
 //when use clicks start button timer should reset
 //present a series of blanks that represent the length of  randomly chosen word
