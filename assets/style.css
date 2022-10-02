@@ -77,7 +77,6 @@ header {
   border: none;
   background-color: #6b8beb;
   border-radius: 25px;
-  box-shadow: black;
   color: white;
   display: inline-block;
   font-size: 22px;
@@ -105,4 +104,35 @@ header {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+aside {
+    width: 30%;
+    text-align: center;
+    padding: 15px;
+    margin-top: 100px;
+    
+    border-style: solid;
+    border-width: 5px;
+    border-color: #151787;
+    border-radius: 7px;
+    float: right;
+}
+
+aside h2 {
+    color: #f0cb36;
+}
+
+aside button {
+  background-color: #151787;
+  border-radius: 25px;
+  box-shadow: black;
+  color: white;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
 }
