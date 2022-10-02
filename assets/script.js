@@ -1,22 +1,21 @@
-//let timerId = setInterval(() => document.getElementById("start").click(), 1000);
-//setTimeout(() => { clearInterval(timerId); alert('You Lost');}, 10000);
 
 var timeEl = document.querySelector(".btn")
 var secondsLeft = 10;
 var timeText = document.querySelector(".time")
+
 timeEl.addEventListener("click", timer)
 
 function timer() {
-var gameTime = setInterval(function() {
+let gameTime = setInterval(function() {
     secondsLeft--;
     timeText.textContent = secondsLeft + " seconds left"
     if(secondsLeft == 0) {
-    clearInterval(gameTime);
-    timeText.textContent = "You Lost" }
+    timeText.textContent = "You Lost" 
+    clearInterval(gameTime);}
   }, 1000);
 }
 
-//timeEl.addEventListener("click", timer)
+clock
 
 
 // game starts on "click" of start button
